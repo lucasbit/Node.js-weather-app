@@ -30,10 +30,14 @@ h1 {
     margin-bottom: 16px;
 }
 
-header a {
+.header__links {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+}
+
+.header__links:hover {
+    border-bottom: 2px solid #888888;
 }
 
 .portrait {
@@ -53,3 +57,8 @@ button {
     padding: 8px;
 }
 
+.linkedin {
+    width: 20px;
+    margin-left: 30px;
+    /* height: 30px; */
+}

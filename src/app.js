@@ -35,7 +35,7 @@ app.get('/about',(req,res) => {
 })
 app.get('/help',(req,res) => {
     res.render('help',{
-        helpText: "This is some help text",
+        helpText: "This app uses mapbox.com API for geocoding and darksky.net API to get forecast. Back-end of this application is made in Node.js. To use it just type in desired location a press button 'search' ",
         title: "Help",
         name: "Lukasz Linka"
     })
