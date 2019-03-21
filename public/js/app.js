@@ -3,7 +3,7 @@ const search = document.querySelector('input');
 const message1 = document.querySelector('.message1');
 const message2 = document.querySelector('.message2');
 
-const getWeather = (userInput,message1,message2) => { fetch(`http://localhost:3000/weather?address=${userInput}`).then((response)=>{
+const getWeather = (userInput,message1,message2) => { fetch(`/weather?address=${userInput}`).then((response)=>{
     response.json().then((data) => {
         if(data.error){
             message1.textContent = data.error;
